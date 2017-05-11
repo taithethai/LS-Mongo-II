@@ -25,12 +25,12 @@ Implement the following routes but have them utilize a database to achieve data 
 * [GET] `/users/:id` This route will return the user with the matching `id` (`_id` on the db document) property.
 * [DELETE] `/users/:id` This route should delete the specified user.
 
-Each `user` in the database should have the properties: email, password, firstName, and blogPosts.  
-Email should be unique, and required.  
-Password should be required.
-blogPosts should be an array of blogPosts.
+Each `user` in the database should have the properties: `email`, `password`, `firstName`, and `blogPosts`.  
+`email` should be unique, required, and have a validation function.  
+`password` should be required.
+`blogPosts` should be an array of blogPosts.
 
-Implement a second collection called `BlogPosts`.  Implement the following routes:
+Implement a second model called `BlogPosts`.  Implement the following routes:
 * [POST] `/posts/:userId` This route should save a new blog post to the corresponding user document.
 * [GET] `/user/posts/:userId` This route will return an array of all blog posts associated with the specified user.
 * [GET] `/posts/:id` This route will return the blog post with the matching `id` property.
